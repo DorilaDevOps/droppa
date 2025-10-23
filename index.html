@@ -1,161 +1,251 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="description" content="Kikiriya DevOps — Diseño y desarrollo de sitios web minimalistas, modernos y optimizados para SEO. Software de calidad en accesibilid y usabilidad.Servicios con seguimiento y mejoras continuas.">
-   <meta name="keywords" content="lentes segunda mano, gafas originales Montevideo, lentes de marca Uruguay, lentes sustentables, second hand eyewear, restauración lentes, gafas usadas originales, vitra montevideo">
-    <meta name="author" content="Kikiriya devOps">
     <meta name="robots" content="index, follow">
+    <title>Droppa - Ropa y Accesorios Originales Importados de USA</title>
+	<meta name="description" content="DROPPA | Ropa y accesorios originales importados de EEUU | productos Originales y de calidad para la moda | Envios a todo el pais | venta con tarjetas">
+	<meta name="keywords" content="DROPPA. ropa , campera, pantalones, lentes, chapiones, segunda mano, originales,  Montevideo, moda, Uruguay, importado">
+    <meta name="author" content="Kikiriya devOps">
     <meta name="language" content="Spanish">
     <meta name="geo.region" content="UY-MO">
-    <meta name="geo.placename" content="Montevideo">
+    <meta name="geo.placename" content="Uruguay">
     <meta name="geo.position" content="-34.905034;-56.191170">
-	<link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=cbBwGOQecGkx&format=png&color=000000" type="image/jpg">
-    
+    <link rel="canonical" href="">
+	
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Kikiriya DevOps | Desarrollo de Software | Accesibilidad Usabilidad | uy">
-    <meta property="og:description" content="Kikiriya DevOps — Diseño y desarrollo de sitios web minimalistas, modernos y optimizados para SEO. Software de calidad en accesibilid y usabilidad. Servicios con seguimiento y mejoras continuas.">
+    <meta property="og:title" content="Droppa - Ropa y Accesorios Originales Importados de USA">
+    <meta property="og:description" content="DROPPA | Ropa y accesorios originales importados de EEUU | productos Originales y de calidad para la moda | Envios a todo el pais | venta con tarjetas">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="image/jpg">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_UY">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="">
     <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="Kikiriya DevOps — Diseño y desarrollo de sitios web minimalistas, modernos y optimizados para SEO. Software de calidad en accesibilid y usabilidad. Servicios con seguimiento y mejoras continuas.">
-    
-  
-  <title>Kikiriya DevOps | Desarrollo de Software | Accesibilidad Usabilidad</title>
-  	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Playfair+Display:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="twitter:description" content="">
+	<meta name="twitter:site" content="">
+    <meta name="twitter:image" content="URL_DE_TU_IMAGEN_TWITTER">
 
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-  
-  <style>
-    :root{
-      --bg_primary:#dadada00;
-		--bg_secondary:#F0E68C; /* Khaki */
-	  --bg_beige:beige;
-      --accent:#0ea5a1;
-      --color_primary:#6b7280;
-	  --color_secundary: #A9A9A9;
-	  --color_tertiary: #0f172a;
-	  --color_celeste:#5e8decbf;
-      --bg_gris:#f8fafc;
-	  --bg_green:#25D366;
-      --radius:16px;
-      --max-width:980px;
-      --shadow:0 6px 20px rgb(2 6 23 / 26%);
-	  --shadow_green:0 8px 25px var(--accent);
-	  --shadow_green_small:0 1px 25px var(--accent);
-	  --text-shadow: rgb(0, 0, 0) 2px 2px 4px;
-	--font_family_playflare:"Playfair Display", serif;
-	  --font_family_poppins: "Poppins", sans-serif;
-	  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-	  --shadow-hover: rgba(0, 0, 0, 0.15);
-		--gradient-start:#fff6f6ba;
-		--gradient-end: #d1d1d100;
-		--overlay: rgba(26, 26, 26, 0.85);
-    }
-	 [data-theme="dark"] {
-	 --bg_primary: #2b2828;
-	 --bg_secondary:;
-	 --color_primary:#d2dfde; 
-	 --color_secundary: #A9A9A9;
-	  --color_tertiary: #cfdcfb;
-	 --bg_beige:#40403c61;
-           --gradient-start: #1a1a1a;
-		--gradient-end: #4a4a4a;
-		--bg_gris:#3f4041;
-       }
-		
-    *{box-sizing:border-box}
-	html{
-		font-size:100%;
-		scroll-behavior: smooth;
-	}
-    body{
-		margin:0;
-		padding:0 0 1rem;
-		background:var(--bg_primary);
-		color:var(--color_tertiary);
-		display:flex;
-		flex-direction:column;
-		min-height:100vh;
-	}
-    .container{
-		width:100%;
-		max-width:var(--max-width);
-		margin:auto;
-		flex:1;
-		background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-	}
-	container::brefore{
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background: radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
-		animation: pulse 15s ease-in-out infinite
-	}
-	@keyframes pulse{
-		0%, 100% {
-			opacity: 1;
-		}
-		50% {
-			opacity: 0.7;
-		}
-	}
-
-    .hero{
-		display:grid;
-		grid-template-columns:1fr;
-		gap:1.2em;
-		align-items:center;
-		padding:36px;
-		background:linear-gradient(180deg,rgba(14,165,161,0.06),transparent 50%);
-		border-radius:calc(var(--radius) - 4px);
-		box-shadow:var(--shadow); 
-		min-height: 100vh;
-	}
-
-    .brand{
-		display:flex;
-		flex-wrap: wrap;
-		gap:14px;
-		align-items:center;
-		justify-content: center;
-		background:var(--bg_gris);
-		padding:0px;
-		border-radius:12px;
-		border:1px solid rgba(2,6,23,0.03);
-		position:relative;
-		overflow: hidden;
-		transition: var(--transition);
-	}
+    	
+		<!-- Iconos para Dispositivos Móviles (iOS y Android)  -->
+	<!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
+	<!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
+    <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+	<link rel="shortcut icon" href="logo_droppa.jpg" type="image/jpg">
 	
-	.brand::before{
-		content: '';
-		position: absolute;
-		inset: 0;
-		background:linear-gradient(34deg, #19f8360a 30%, rgb(144 191 242 / 24%) 50%, #c8ce220a 70%);
-		opacity: 1;
-		transition: var(--transition);
-		animation: shimmer 1.3s infinite;
-		z-index:2;
-	}
-	<!-- .brand:hover::before{opacity:1;} -->
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Playfair+Display:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	
+    <style>
+        /* ============================================
+           CSS VARIABLES - THEME SYSTEM
+        ============================================ */
+        :root {
+            color-scheme: light dark;
+			
+			/*Paleta principal*/
+			 --bg_primary: #F8F9FB;       /* Fondo principal: limpio, luminoso */
+  --bg_secondary: #FFFFFF;     /* Fondo de tarjetas o secciones */
+  --bg_accent: #E8EEF5;        /* Suave acento azulado para secciones destacadas */
+  --bg_inverse: #1E1E1E;       /* Fondo inverso para botones o headers oscuros */
+
+  /* Colores de texto */
+  --text_primary: #1C1C1C;     /* Texto principal: fuerte y legible */
+  --text_secondary: #4A4A4A;   /* Texto suave: descripciones, subtítulos */
+  --text_accent: #2E5EAA;      /* Azul Oxford elegante */
+  --text_inverse: #FFFFFF;     /* Texto sobre fondos oscuros */
+
+  /* Colores de énfasis */
+  --brand_primary: #2E5EAA;    /* Azul clásico, confianza */
+  --brand_secondary: #EEC643;  /* Dorado/mostaza sofisticado */
+  --brand_accent: #A9BBD2;     /* Azul grisáceo, detalle minimal */
+  
+			
+--bg_celeste:#809bd2d9;
+--bg_verde:rgb(103 182 50 / 91%);
+--bg_beige:#edc66bb8 100%;
+
+            --color-primary: #0066ff;
+            --color-primary-dark: #0052cc;
+            --color-secondary: #ff6b35;
+            --color-accent: #ffd166;
+			--mercedes_color: #2bffb3;
+            
+			--bg_transparent:#f1ebeb30;
+			--bg_transparent2:#1717173b;
+			--bg_neutral_light: #F5F5DC; 
+            --color-bg: #ffffff;
+            --color-bg-secondary: #f8f9fa;
+            --color_bg_tertiary: #e9ecef;
+            --color-surface: #ffffff;
+            
+            --color-text: #1a1a1a;
+            --color-text-secondary: #666666;
+            --color-text-tertiary: #999999;
+            
+            --color-border: #e0e0e0;
+            --color-shadow: rgba(0, 0, 0, 0.1);
+            
+            /* Spacing */
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-2xl: 4rem;
+            	
+            /* Typography */
+            --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+            --font-size-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+            --font-size-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+            --font-size-lg: clamp(1.125rem, 1rem + 0.625vw, 1.5rem);
+            --font-size-xl: clamp(1.5rem, 1.3rem + 1vw, 2.25rem);
+            --font-size-2xl: clamp(2rem, 1.5rem + 2.5vw, 3.5rem);
+			--font_family_playflare:"Playfair Display", serif;
+			--font_family_poppins: "Poppins", sans-serif;
+            
+            /* Effects */
+            --border-radius: 12px;
+            --border-radius-lg: 16px;
+            --transition1: all 1s ease;
+			 --transition2: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+			  --shadow_green:0 8px 25px var(--mercedes_color);
+			  --shadow_green_small:0 1px 25px var(--mercedes_color);
+			  --text-shadow: rgb(0, 0, 0) 2px 2px 4px;
+            --shadow-sm: 0 2px 8px var(--color-shadow);
+            --shadow-md: 0 4px 16px var(--color-shadow);
+            --shadow-lg: 0 8px 32px var(--color-shadow);  
+			--shadow-hover: rgba(0, 0, 0, 0.15);
+			--gradient-start:#fff6f6ba;
+			--gradient-end: #d1d1d100;
+			--overlay: rgba(26, 26, 26, 0.85);
+			--overlay2:#010b2bdb;
+        }
+
+        [data-theme="dark"] {
+            /*Paleta principal*/
+				--bg_primary: #121417;       /* Fondo principal oscuro */
+  --bg_secondary: #1A1C1F;     /* Fondo de tarjetas */
+  --bg_accent: #252830;        /* Fondo destacado */
+  --bg_inverse: #F7F7F7;       /* Fondo claro para contraste */
+
+  /* Colores de texto */
+  --text_primary: #E6E9EE;     /* Texto principal */
+  --text_secondary: #A3A8B0;   /* Texto sutil */
+  --text_accent: #6C8CD5;      /* Azul claro elegante */
+  --text_inverse: #1A1A1A;     /* Texto sobre fondos claros */
+
+  /* Colores de énfasis */
+  --brand_primary: #6C8CD5;    /* Azul más suave */
+  --brand_secondary: #FFD75E;  /* Dorado cálido */
+  --brand_accent: #99A7C3;     /* Gris-azul neutro */
+  
+  
+--bg_celeste:#0b1427d9;
+--bg_verde:rgb(32 64 11 / 91%);
+--bg_beige:#edc66bb8 100%;
+
 		
-	.brand_logo{    
-	display: flex;
-    gap: 1rem;
-    align-items: center;
+
+  --bg_neutral_light: #9b9b9a;
+            --color-primary: #3d8eff;
+            --color-primary-dark: #2070e0;
+            --color-secondary: #ff7f50;
+            --color-accent: #ffda79;
+            
+			--bg_transparent:#e8e8e830;
+			--bg_transparent2:#171717bf;
+			
+            --color-bg: #0f0f0f;
+            --color-bg-secondary: #1a1a1a;
+            --color_bg_tertiary: #242424;
+            --color-surface: #1e1e1e;
+            
+            --color-text: #f5f5f5;
+            --color-text-secondary: #b0b0b0;
+            --color-text-tertiary: #808080;
+            
+            --color-border: #333333;
+            --color-shadow: rgba(0, 0, 0, 0.3);
+        }
+
+        /* ============================================
+           RESET & BASE STYLES
+        ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 100%;
+        }
+
+        body {
+            font-family: var(--font-sans);
+           
+            color: var(--color-text);
+            line-height: 1.6;
+            transition: var(--transition1);
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+			height: auto;
+			width:50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+      
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--bg_transparent);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--color-border);
+            transition: var(--transition2);
+			height:5rem;
+        }
+
+        .nav__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--spacing-sm) var(--spacing-md);
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+		.brand_logo{    
+		display: flex;
+		gap: 1rem;
+		align-items: center;
 	    padding-left: 20px;
 	}
-	
-	
-    .logo{	
+	.logo{	
 		border-radius:12px;
 		background:linear-gradient(135deg,var(--accent),var(--color_celeste));
 		display:flex;
@@ -164,519 +254,1778 @@
 		color:white;font-weight:700;
 		font-size:20px;	
 		border: 1px solid #666;
-		-webkit-transform: skew(-25deg);
-		-moz-transform: skew(-25deg);
-		-o-transform: skew(-25deg);
-		-ms-transform: skew(-25deg);
-		transform: skew(-25deg);
+		
 	}
 	.logo img{ 
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: bottom;
-		width: 100%;
 	}
-	
-	.brand_title{display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-	gap: 1em;
-	}
-	
-	.lang-toggle{    
-		margin-left:8px
-		display: flex;
-		gap: 8px;
-		align-items: center;
-	}
-	
+        .nav__logo {
+            font-size: var(--font-size-lg);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
-    h1{margin:0;font-size:clamp(20px,4vw,34px);line-height:1.02;min-height:48px}
-	h2{font-family:var(--font_family_playflare);font-size:1em;}
-	h3{    
-		font-family: var(--font_family_poppins);
-		white-space: nowrap;
-		color: var(--color_tertiary);
-		-webkit-text-stroke-width: .7px;
-		-webkit-text-stroke-color: black;
-		text-transform: uppercase;
-		text-shadow: var(--text-shadow);
-		font-weight: 500;
-		line-height: 1.2;
-	}
-	h3::after{
-		content:'';
-		position:absolute;
-		left:0;
-		bottom:10px;
-		width:0%;
-		height:3px;
-		background:var(--txt_hover);
-		transition:all .3s ease;
-	}
-	img {
-	max-width: 100%;height: auto;
-}
-	li{list-style: none;margin-left: -20px;}
- a {text-decoration: none;color: inherit;}
- a:hover{color:#040404;}
-    p.lead{margin:12px 0 0;color:var(--color_primary);font-size:clamp(14px,2.2vw,16px)}
+        .nav__menu {
+            display: none;
+            list-style: none;
+            gap: var(--spacing-lg);
+			animation: slideIn 0.3s ease forwards;
+        }
+		
+		@keyframes sladeIn{
+			0% {
+			transform: translateX(100%);
+			}
+			100% {
+				transform: translateX(0);
+			}
+		}
+        .nav__menu.active {
+            display: flex;
+            flex-direction: column;
+			align-items: center;
+            position: fixed;
+            top: 100%;
+            left: 0;
+            right: 0;
+			height: 100vh;
+            background: var(--overlay2);
+            padding: var(--spacing-lg);
+            border-bottom: 1px solid var(--color-border);
+            box-shadow: var(--shadow-md);
+			backdrop-filter: blur(10px);
+			z-index:10;
+        }
+		
+		.nav__menu.active .nav__link{ color:var(--bg_neutral_light);}
 
-    .features{display:flex;flex-direction:column;gap:10px;margin-top:18px}
-    .feature{display:flex;gap:12px;align-items:flex-start}
-    .dot{min-width:10px;height:10px;border-radius:50%;background:var(--accent);margin-top:6px}
-    .feature p{margin:0;color:var(--color_primary);font-size:14px}
+        .nav__link {
+            font-size: var(--font-size-lg);
+            font-weight: 500;
+            color: var(--color-text);
+            transition: var(--transition1);
+            position: relative;
+        }
 
-	.description_site{    
-		display: flex;
-		flex-direction: column;
-		gap: .3em;
-	}
-    .hero-foot{
-		display:grid;
-		grid-template-columns:2fr 1fr;
-		gap:2px;
-		align-items:start;
-		padding:2em 1em;
-		background-color:var(--bg_beige);
-	}
-	.aside{padding: 3em .5em;}
-	
-	.contact_wrap{
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-		align-items: center;
-	}
-	 
-	
-	.contact_my{
-		display: flex;    
-		color: var(--color_primary);
-		gap: 1rem;
-		flex-direction: column;
-	}
-	
-    .btn.ghost{background:transparent;border:1px solid #e6eef0;color:var(--color_tertiary);box-shadow:none}
-.theme-toggle {
-            background: transparent;
-            border: none;
-            color: var(--color_tertiary);
-            padding: 0.5rem;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 1.8em;
-            width: 40px;
-            height: 40px;
+        .nav__link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-primary);
+            transition: var(--transition2);;
+        }
+
+        .nav__link:hover {
+            color: var(--color-primary);
+        }
+
+        .nav__link:hover::after {
+            width: 100%;
+        }
+
+        .nav__toggle {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: var(--spacing-xs);
+        }
+
+        .nav__toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--color-text);
+            border-radius: 2px;
+            transition: var(--transition1);
+        }
+
+        .nav__toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .nav__toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .nav__toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        .theme-toggle {
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: none;
+            transition: var(--transition2);
         }
 
         .theme-toggle:hover {
-            background: var(--accent);
             transform: scale(1.1);
+            box-shadow:var(--shadow_green);
         }
 
-	
-    .grid{display:grid;grid-template-columns:1fr;gap:12px;color:var(--color_tertiary);}
+        .sun-icon {
+            display: block;
+        }
 
-    .lang-toggle{display:inline-flex;border-radius:2rem;border:1px solid var(--color_secundary);padding:6px}
-    .lang-toggle button{background:transparent;padding:8px 10px;border-radius:2rem;cursor:pointer;font-weight:600;border:1px solid transparent;}
-    .lang-toggle button.active{border:1px solid var(--color_secundary);box-shadow:var(--shadow)}
+        .moon-icon {
+            display: none;
+        }
 
-    footer{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align:center;
-		color:var(--color_celeste);
-		font-size:14px;
-		padding-top:2rem;
-		border-top:2px solid var(--bg_secondary);
-		position:relative;
-	}
-	.foot_theme{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-		width: 20rem;
-		max-width: 50%;
-	}
-	
-    #clock{font-weight:600;color:var(--accent)}
-	
-/* WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 10rem;
-            right: 1rem;
-            background: transparent;
+        [data-theme="dark"] .sun-icon {
+            display: none;
+        }
+
+        [data-theme="dark"] .moon-icon {
+            display: block;
+        }
+
+			<!-- /* Overlay */ -->
+		.overlay .active {
+			visibility: visible;
+			opacity: 1;
+			display:block;
+		}
+		.overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			background-color: rgba(0, 0, 0, 0.5);
+			z-index: 20;
+			visibility: hidden;
+			opacity: 0;
+			display:none;
+			transition: opacity 0.3s ease;
+		}
+		
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: .5rem 0;
+			color: var(--color-text);
+			
+		background:linear-gradient(1deg,var(--color-surface),var(--bg_transparent2));
+			    text-align: center;
+        }
+
+        /* Gallery Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        /* Gallery Item */
+        .gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            background: var(--bg_secondary);
+            box-shadow: 0 4px 20px var(--shadow-light);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px var(--shadow-medium);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            loading: lazy;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(#45435ecf, rgba(0, 0, 0, 0.7));
             color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-			border:none;
+            padding: 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-overlay h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        .gallery-overlay p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+		
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal.active {
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
-            box-shadow: var(--shadow_green_small);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content {
+            max-width: 90vw;
+            max-height: 90vh;
+            position: relative;
+            background: var(--bg_primary);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal img {
+            width: 100%;
+            max-height: 70vh;
+            object-fit: cover;
+        }
+
+        .modal-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .modal-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .modal-info p {
+            color: var(--text_secondary);
+            line-height: 1.6;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
             cursor: pointer;
+            font-size: 1.5rem;
             transition: all 0.3s ease;
-            z-index: 2;
-            text-decoration: none;
         }
 
-        .whatsapp-float:hover {
-            transform: scale(1.1) translateY(-3px);
-            box-shadow: var(--shadow_green);
-			background: var(--accent);
+        .modal-close:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: rotate(90deg);
         }
-		.whatsapp-float:hover::before {
+
+        /* Loading State */
+        .gallery-item.loading {
+            background: linear-gradient(90deg, var(--bg_secondary) 25%, var(--border-color) 50%, var(--bg_secondary) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* ============================================
+           BUTTONS
+        ============================================ */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            border-radius: var(--border-radius);
+            font-size: var(--font-size-sm);
+            font-weight: 600;
+            transition: var(--transition1);
+            cursor: pointer;
+        }
+
+        .btn--primary {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+            color: white;
+            box-shadow: 0 4px 16px rgba(0, 102, 255, 0.3);
+        }
+
+        .btn--primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 102, 255, 0.4);
+        }
+
+        .btn--secondary {
+            background: var(--color-bg-secondary);
+            color: var(--color-text);
+            border: 2px solid var(--color-border);
+        }
+
+        .btn--secondary:hover {
+            background: var(--color_bg_tertiary);
+            border-color: var(--color-primary);
+        }
+
+        .btn--large {
+            padding: 16px 32px;
+            font-size: var(--font-size-base);
+        }
+
+        .btn--full {
+            width: 100%;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 80px;
+            position: relative;
+            overflow: hidden;
+            
+			color:var(--text_primary);
+			 background: linear-gradient(var(--bg_celeste), var(--bg_verde)), linear-gradient(45deg, var(--bg_beige));
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-opacity='0.05'%3E%3Cpath d='M30 30c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20zm15 0c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z'/%3E%3C/g%3E%3C/svg%3E") repeat;
+            z-index: -1;
+        }
+
+        .hero__container {
+            display: grid;
+            gap: var(--spacing-xl);
+            align-items: center;
+        }
+
+        .hero__content {
+            text-align: center;
+        }
+
+        .hero__badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: var(--bg_neutral_light);
+            border: 1px solid var(--color-border);
+            border-radius: 50px;
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-md);
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .hero__title {
+            font-size: var(--font-size-xl);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: var(--spacing-md);
+            <!-- background:  var(--color-text-secondary); -->
+            <!-- -webkit-background-clip: text; -->
+            <!-- -webkit-text-fill-color: transparent; -->
+            <!-- background-clip: text; -->
+            animation: fadeInUp 0.6s ease 0.1s backwards;
+        }
+
+        .hero__description {
+            font-size: var(--font-size-base);
+            <!-- color: var(--color-text-secondary); -->
+            max-width: 600px;
+            margin: 0 auto var(--spacing-lg);
+            animation: fadeInUp 0.6s ease 0.2s backwards;
+        }
+
+        .hero__buttons {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.6s ease 0.3s backwards;
+        }
+
+        .hero__image {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            animation: fadeInUp 0.6s ease 0.4s backwards;
+        }
+
+        .hero__image-placeholder {
+            width: 100%;
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            border-radius: var(--border-radius-lg);
+			background-image:url("./imgs/foto0.png"); 
+			background-size: contain;
+        }
+
+        .hero__scroll {
+            position: absolute;
+            bottom: var(--spacing-lg);
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-xs);
+            color: var(--color-text-tertiary);
+            font-size: var(--font-size-xs);
+            animation: bounce 2s infinite;
+        }
+
+        .hero__scroll-line {
+            width: 2px;
+            height: 40px;
+            background: linear-gradient(to bottom, var(--color-primary), transparent);
+        }
+       
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+        }
+
+        /* ============================================
+           FEATURES SECTION
+        ============================================ */
+        .features {
+			font-size:1em;
+            background: var(--color-bg-secondary);
+        }
+
+        .features__grid {
+            display: grid;
+            gap: var(--spacing-sm);
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+
+        .feature {
+            text-align: center;
+            padding: var(--spacing-xs);
+            background: var(--color-surface);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--color-border);
+            transition: var(--transition1);
+			box-shadow:var(--shadow-sm);
+        }
+
+        .feature:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--color-primary);
+        }
+
+        .feature__icon {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .feature__title {
+            font-size: var(--font-size-lg);
+            font-weight: 700;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .feature__text {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+        }
+
+        /* ============================================
+           SECTION HEADERS
+        ============================================ */
+        .section__header {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .section__title {
+            font-size: var(--font-size-xl);
+            font-weight: 800;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .section__subtitle {
+            font-size: var(--font-size-base);
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+
+        .btn_ptoduct {
+            padding: 8px 16px;
+            background: var(--color-accent);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size-sm);
+            font-weight: 600;
+            transition: var(--transition1);
+        }
+
+        .btn_ptoduct:hover {
+            background: var(--color-primary);
+            color: white;
+        }
+
+        /* ============================================
+           ABOUT SECTION
+        ============================================ */
+        .about {
+            background: var(--color-bg-secondary);
+        }
+
+        .about__grid {
+            display: grid;
+            gap: var(--spacing-xl);
+            align-items: center;
+        }
+		.abaut
+                    <span class="about__badge">Sobre Nosotros</span>{}
+
+        .about__image-placeholder {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            border-radius: var(--border-radius-lg);
+            opacity: 1;
+			background-image:url('./imgs/camp13.png');
+			background-size: cover; /* Para que cubra todo el contenedor */
+			  background-repeat: no-repeat; /* Para que no se repita */
+			  background-position: center;
+			  transition:var(--transition1);
+        }
+		.about__image-placeholder:hover{transform:scale(1.1);}
+
+        .about__badge {
+            display: inline-block;
+            padding: 6px 12px;
+            background: var(--color-primary);
+            color: white;
+            border-radius: 50px;
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .about__title {
+            font-size: var(--font-size-xl);
+            font-weight: 800;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .about__text {
+            font-size: var(--font-size-base);
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-md);
+            line-height: 1.8;
+        }
+
+        .about__list {
+            list-style: none;
+            display: grid;
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-lg);
+        }
+
+        .about__list li {
+            font-size: var(--font-size-base);
+            color: var(--color-text-secondary);
+            padding-left: var(--spacing-md);
+        }
+
+
+        /* ============================================
+           CTA SECTION
+        ============================================ */
+        .cta {
+            padding: var(--spacing-2xl) 0;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 70%);
+            border-radius: 50%;
+        }
+
+        .cta__content {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta__title {
+            font-size: var(--font-size-xl);
+            font-weight: 800;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .cta__text {
+            font-size: var(--font-size-base);
+            margin-bottom: var(--spacing-lg);
+            opacity: 0.9;
+        }
+
+        .cta .btn--primary {
+            background: white;
+            color: var(--color-primary);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta .btn--primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        /* ============================================
+           CONTACT SECTION
+        ============================================ */
+        .contact {
+            <!-- padding: var(--spacing-2xl) 0; -->
+        }
+		.social__col{
+			 border: 2px solid grey;
+			display: flex;
+			flex-direction: column;
+			gap: 2em;
+			padding-bottom: 2em;
+			background-color:var(--bg_accent);
+		}
+
+        .contact__grid {
+            display: grid;
+            gap: var(--spacing-xl);
+        }
+
+        .contact__info {
+            display: grid;
+        }
+
+        .contact__item {
+            display: flex;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md);
+            background: var(--color-bg-secondary);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--color-border);
+        }
+
+        .contact__icon {
+            font-size: 2rem;
+        }
+
+        .contact__item h3 {
+            font-size: var(--font-size-base);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .contact__item p {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+        }
+
+        .contact__form {
+            display: grid;
+            gap: var(--spacing-md);
+        }
+
+        .form__input,
+        .form__textarea {
+            width: 100%;
+            padding: var(--spacing-md);
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+            font-family: inherit;
+            font-size: var(--font-size-base);
+            color: var(--color-text);
+            transition: var(--transition1);
+        }
+
+        .form__input:focus,
+        .form__textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+        }
+
+        .form__textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+
+        /* ============================================
+           FOOTER
+        ============================================ */
+        .footer {
+            background: linear-gradient(var(--bg_celeste), var(--bg_verde)), linear-gradient(45deg, var(--bg_beige));
+            border-top: 1px solid var(--color-border);
+        }
+        .footer__grid {
+            display: grid;
+            gap: var(--spacing-sm);
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .footer__col {
+            display: flex;
+            flex-direction: column;
+			align-items: center;
+        }
+
+        .footer__title {
+            font-size: var(--font-size-xl);
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer__text {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+        }
+
+        .footer__social {
 			width: 100%;
-            height: 100%;
-	}
-	.whatsapp-float::before {
-		content: '';
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 0;
-		height: 0;
-		border-radius: 50%;
-		background: rgba(255, 255, 255, 0.2);
-		transform: translate(-50%, -50%);
-		transition: width 0.6s, height 0.6s;
-	}
-		
-		
-@media(min-width:790px){
-.brand{padding: 18px;}
-.brand_title{
-	gap: 1rem; 
-    font-size: 1.3em;
-    flex-direction: column;
-    align-items: center;
-	}
-	h2{font-size:1em;color:red;}
-	.aside{}
-	.hero{gap:2em;
-	}
+            display: flex;
+			justify-content: space-around;
+            gap: var(--spacing-sm);
+        }
 
-}
-    @media(min-width:900px){
-      .hero{grid-template-columns:1fr}
-	  aside{display:grid; grid-template-columns: 1fr; margin: 3em;}
-	  .whatsapp-float{bottom: 130px;right: 220px;width: 80px;
-    height: 80px;}
-	.hero{gap:3em;}
-	.brand{justify-content: space-around;font-size: 2em;}
-    }
-	@media(min-width:1200px){
-	    .whatsapp-float {
-			bottom: 230px;
-			right: 320px;
-			width: 120px;
-			height: 120px;
+        .footer__social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--color_bg_tertiary);
+            border-radius: 50%;
+            color: var(--color-text-secondary);
+            transition: var(--transition1);
+        }
+
+        .footer__social-link:hover {
+            background: var(--color-primary);
+            color: white;
+            transform: translateY(-4px);
+        }
+
+        .footer__heading {
+            font-size: var(--font-size-base);
+            font-weight: 700;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer__list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xs);
+        }
+		
+        .footer__list a {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+            transition: var(--transition1);
+        }
+		
+		body > footer > div > div.footer__grid > div:nth-child(3) > ul > li:nth-child(5) > a{color:light-dark(yellow, orange);text-shadow:2px 2px 5px black;}
+		body > footer > div > div.footer__grid > div:nth-child(3) > ul > li:nth-child(6)> a{color:light-dark(yellow, orange);text-shadow:2px 2px 5px black;}
+
+        .footer__list a:hover {
+            color: var(--color-primary);
+            padding-left: 4px;
+        }
+
+        .footer__form {
+            display: flex;
+            gap: var(--spacing-xs);
+        }
+
+        .footer__input {
+            flex: 1;
+            padding: var(--spacing-sm);
+            background: var(--color_bg_tertiary);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+            font-family: inherit;
+            font-size: var(--font-size-sm);
+            color: var(--color-text);
+        }
+
+        .footer__btn {
+            padding: var(--spacing-sm) var(--spacing-md);
+            background: var(--color-primary);
+            color: white;
+            border-radius: var(--border-radius);
+            font-size: var(--font-size-sm);
+            font-weight: 600;
+            transition: var(--transition1);
+        }
+
+        .footer__btn:hover {
+            background: var(--color-primary-dark);
+        }
+
+        .footer__badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
+            margin-top: var(--spacing-sm);
+        }
+
+        .badge {
+            padding: 6px 12px;
+            background: var(--color_bg_tertiary);
+            border: 1px solid var(--color-border);
+            border-radius: 50px;
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+            color: var(--color-text-secondary);
+        }
+
+        .footer__bottom {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+            padding-top: var(--spacing-lg);
+            border-top: 1px solid var(--color-border);
+            text-align: center;
+            font-size: var(--font-size-sm);
+            color: var(--color-text-tertiary);
+        }
+
+        .footer__bottom p {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        /* ============================================
+           RESPONSIVE UTILITIES
+        ============================================ */
+		
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+        @media (min-width: 768px) {
+		
+            .hero__container {
+                grid-template-columns: 1fr 1fr;
+                text-align: left;
+            }
+
+            .hero__content {
+                text-align: left;
+            }
+
+            .hero__description {
+                margin-left: 0;
+            }
+
+            .hero__buttons {
+                justify-content: flex-start;
+            }
+            .about__grid {
+                grid-template-columns: 1fr 1fr;
+            }
+			.feature__icon {
+				font-size: 3rem;
+				margin-bottom: var(--spacing-md);
+			}
+			
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1rem;
+            }
+            
+            .gallery-item img {
+                height: 200px;
+            }
+
+            .theme-toggle {
+                position: static;
+                margin-top: 1rem;
+            }
+
+            .header {
+                padding-bottom: 2rem;
+            }
+            .nav__menu {
+                display: flex;
+            }
+
+            .nav__toggle {
+                display: none;
+            }
+			.footer__bottom {
+				flex-direction: column;
+				color:red;
+			}
+			 .hero {
+                padding-top: 100px;
+            }
+            .section__title {
+                font-size: var(--font-size-lg);
+            }
+            .contact__grid {
+                grid-template-columns: 1fr 1fr;
+            }
+			
+        }
+
+        @media (min-width: 1200px) {
+            .gallery {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (min-width: 1600px) {
+            .gallery {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+		
+       		
+		@media (orientation: landscape){
+			.header{background-color:var(--color-border);}
 		}
-	}
+		
 	
-	
-	@keyframes shimmer{
-		0% {
-		transform: translateX(-100%);
-		}
-		100% {
-			transform: translateX(100%);
-		}
-	}
-  </style>
+    </style>
 </head>
 <body>
-  <main class="container">
-    <section class="hero" aria-labelledby="hero-title">
-        <div class="brand">
-			  <div class="brand_logo">
-				  <div class="logo"><img src="https://img.icons8.com/?size=100&id=cbBwGOQecGkx&format=png&color=000000"/></div>
-				  <div class="brand_title"><div><strong >Kikiriya DevOps</strong></div> <div><i>software development</i></div></div>
-				  
-			  </div>		  
-			  <div class="lang-toggle" role="tablist" aria-label="Cambiar idioma">
-					<small data-es style="color:var(--color_primary);font-size:13px">Sitios Minimalistas · <br>  Alta Performance</small>
-					<small data-en style="display:none; color:var(--color_primary);font-size:13px"> Minimalist Sities · <br>  hight Performance</small>
-					<button id="btn-es" class="active" aria-selected="true">ES</button>
-					<button id="btn-en" aria-selected="false">EN</button>
-			  </div>
-		  </div>
-		<div class="description_site">
-			<h1 id="animated-title"></h1>
-			
-			<div class="subtitle" data-es>
-			<p>En Kikiriya DevOps creemos en el diseño con propósito: sitios web simples, accesibles y visualmente limpios que priorizan la experiencia humana.</p>
-			<p>Cada proyecto es pensado desde la accesibilidad y la usabilidad. Interfaz moderna que inspira confianza.</p>
-			<p> Combinamos diseño y tecnología para ofrecer sitios web minimalistas, elegantes y funcionales, que se adaptan con fluidez a cada pantalla.</p>
-			</div>
-			<div class="subtitle" data-en style="display:none">
-			<p>At Kikiriya DevOps we believe in design with purpose: simple, accessible and visually clean websites that prioritize the human experience.</p>
-			<p>Each project is thought about accessibility and usability. Modern interface that inspires confidence.</p>
-			<p>We combine design and technology to offer minimalist, elegant and functional websites that adapt fluidly to each screen.</p>
-			</div>
-			
-			<div class="features">
-			  <div class="feature">
-				<div class="dot"></div>
-				<p data-es>Diseño limpio, tecnología moderna y resultados visibles.</p>
-				<p data-en style="display:none">Clean design, modern technology and visible results.</p>
-			  </div> 
-			  <div class="feature">
-				<div class="dot"></div>
-				<p data-es>Menos ruido, más impacto visual.</p>
-				<p data-en style="display:none">Less noise, more visual impact.</p>
-			  </div>
-			  <div class="feature">
-				<div class="dot"></div>
-				<p data-es>Tu idea, transformada en una experiencia web moderna.</p>
-				<p data-en style="display:none">Your idea, transformed into a modern web experience.</p>
-			  </div>
-			  <div class="feature">
-				<div class="dot"></div>
-				<p data-es>Diseño adaptable y velocidad optimizada.</p>
-				<p data-en style="display:none">Responsive design and optimized speed.</p>
-			  </div>
-			  <div class="feature">
-				<div class="dot"></div>
-				<p data-es>Accesibilidad y rendimiento en cada línea de código.</p>
-				<p data-en style="display:none">Accessibility and performance in every line of code.</p>
-			  </div>
-			  <div class="feature">
-				<div class="dot"></div>
-				<p data-es>Código limpio, estética cuidada y navegación fluida.</p>
-				<p data-en style="display:none">Clean code, careful aesthetics and fluid navigation.</p>
-			  </div>
-			</div>
-		  </div>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__container">
+				<div class="brand_logo">
+					<div class="logo"><img src="logo_droppa.jpg" width="35px" height="35px"/></div>
+					<a href="#" class="nav__logo">DROPPA</a>		  
+				</div>					                
+                <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav__menu" id="navMenu">
+                    <li><a href="#home" class="nav__link">Inicio</a></li>
+                    <li><a href="#products" class="nav__link">Productos</a></li>
+                    <li><a href="#about" class="nav__link">Nosotros</a></li>
+                    <li><a href="#contact" class="nav__link">Contacto</a></li>
+                    <li><a href="https://www.instagram.com/droppa.uy/" class="footer__social-link" aria-label="Instagram" target="_blank" style="">
+                            <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a></li>
+                </ul>
+                <!-- <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"> -->
+					<!-- <img class="sun-icon" src="logo_d.png"/> -->
+					<!-- <img class="moon-icon" src="logo_3.png"/> -->
+                <!-- </button> -->
+            </div>
+        </nav>
+    </header>
+	<div class="overlay" id="overlay"></div>
 
-      <aside class="aside">
-        <div class="grid">
-		<div >
-          <div data-es>
-				<strong>¿Por qué elegir este servicio?</strong>
-				<p style="margin:8px 0 0;color:var(--color_primary)">Comunicación fluída y transparente, entregas ágiles y calidad constante.</p>
-				<p style="margin:8px 0 0;color:var(--color_primary)">Acompañamos cada proyecto con seguimiento, mejoras y ajustes continuos junto a vos.
-				<p style="margin:8px 0 0;color:var(--color_primary)">El objetivo: un sitio rentable, fácil de mantener y que comunique tu propuesta de valor con claridad.</p>
-				<p style="margin:8px 0 0;color:var(--color_primary)"><span style="font-weight:600">Presupuesto justo</span>
-					El presupuesto inicial cubre un producto mejorado con ajustes posteriores según conveniencia del cliente.</p>
-			</div>
-			<div data-en style="display:none">			
-				<strong>Why choose this service?</strong>
-				<p style="margin:8px 0 0;color:var(--color_primary)">Fluid and transparent communication, agile deliveries and constant quality.</p>
-				<p style="margin:8px 0 0;color:var(--color_primary)">We accompany each project with continuous monitoring, improvements and adjustments together with you.</p>
-				<p style="margin:8px 0 0;color:var(--color_primary)">The goal: a profitable site that is easy to maintain and communicates your value proposition clearly.</p>
-				<p style="margin:8px 0 0;color:var(--color_primary)"><span style="font-weight:600">Fair pricing</span>
-					The initial quote covers an improved product with subsequent adjustments based on customer convenience.</p>
-			</div>
-		</div>
-		  
-         <div>
-            <strong data-es>Qué incluye</strong>
-            <ul data-es style="margin:8px 0 0;color:var(--color_primary);padding-left:18px">
-              <li>Diseño minimalista UX y UX enfocado.</li>
-              <li>Optimización para posicionamiento basico y velocidad en buscadores (SEO).</li>
-              <li>Entrega continua en el desarrollo y pruebas de funcionamiento.(Agile software )</li>
-            </ul>
-
-            <strong data-en style="display:none">What&apos;s included</strong>
-            <ul data-en style="display:none;margin:8px 0 0;color:var(--color_primary);padding-left:18px">
-              <li>Minimal design UX and UX focus.</li>
-              <li>Optimización para posicionamiento basico y velocidad en buscadores (SEO).</li>
-              <li>Continuous delivery in development and functional testing (Agile software)</li>
-            </ul>
-          </div>
-		  
-         <div>
-            <strong data-es>Notas</strong>
-            <p data-es style="margin:8px 0 0;color:var(--color_primary)">El cliente puede gestionar dominio y hosting. </p>
-			<p data-es style="margin:8px 0 0;color:var(--color_primary)">	Mantenimiento opcional. </p>
-			<p data-es style="margin:8px 0 0;color:var(--color_primary)">	Fomentamos una comunicación fluida y flexible para asegurar que tu visión se traduzca en un sitio web que impulse tanto tu crecimiento como el nuestro.</p>
-
-            <strong data-en style="display:none">Notes</strong>
-            <p data-en style="display:none;margin:8px 0 0;color:var(--color_primary)">The client can manage domain and hosting. </p>
-			<p data-en style="display:none;margin:8px 0 0;color:var(--color_primary)">	Optional maintenance. </p>
-			<p data-en style="display:none;margin:8px 0 0;color:var(--color_primary)">	We encourage fluid and flexible communication to ensure that your vision is translated into a website that drives both your growth and ours.</p>		  
-		  </div>
-		  
-        </div>
-      </aside>
-    </section>
-	
-        <div class="hero-foot" >
-			<div class="contact_wrap">				
-				  <h3>Contactar</h3>
-				  <div class="contact_my" >
-					<div><strong>Teléfono:</strong> 
-						<a href="tel:+598094872605" class="" target="_blank" rel="noopener" aria-label="Contactar por telefono fijo">094872605</a>
-					</div>		
-					<div><strong>Ubicación:</strong> Prado, Montevideo, Uruguay</div>
-					<div>📩 andrarias@tutamail.com	</div>	
-					
-				  </div>    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__container">
+            <div class="hero__content">
+                <!-- <span class="hero__badge">Ropa y accesorios importados de USA</span> -->
+                <!-- <span class="hero__badge">💯 Productos 100% originales</span> -->
+                <!-- <span class="hero__badge">📦 Envíos a todo el país</span> -->
 				
-			  </div > 
-		
-			<a href="https://wa.me/598094872605?text=Hola%2C%20%20Kikiriya%20DevOp" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-			   📞
-			</a>
-			<button style="border:none;background-color:transparent;color:red"><a href="index.html"> 🔙 BACK</a></button>
-		</div>
-			
-  </main>
+                <h1 class="hero__title">Moda Auténtica, Calidad Garantizada</h1>
+                <p class="hero__description">Descubre las últimas tendencias en ropa y accesorios importados directamente de Estados Unidos	</p>
+				<p class="hero__description">En DROPPA creemos que la moda debe inspirar confianza. comprometida con tu estilo de marcas reconocidas</p>
+				
+                <div class="hero__buttons">
+                    <a href="#products" class="btn btn--primary">Ver Colección</a>
+                    <a href="#about" class="btn btn--secondary">Conocer Más</a>
+                </div>
+            </div>
+            <div class="hero__image">
+                <div class="hero__image-placeholder"></div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <span>Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
 
-  <footer>
-		<div>
-			© <span id="year"></span> Kikiriya DevOps — Todos los derechos reservados.<br>
-			Hecho con 💚<br>
-		</div>
-		<div class="foot_theme">
-			<div><p>Última actualización: <span id="clock"></span>	</p></div>
-			<div><button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-					<span id="themeIcon">🌙</span>				
-				</button>
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+		<h2>Así hacemos que suceda</h2>
+
+<p>Importamos moda auténtica directamente desde Estados Unidos.</p>
+
+<p>Garantizamos la originalidad de cada producto.</p>
+
+<p>Ofrecemos atención personalizada, tanto en compras individuales como al por mayor.</p>
+
+<p>Manejamos envíos seguros y rápidos, en todo Uruguay.</p>
+
+<p>Seleccionamos tendencias que combinan calidad, estilo y confort.</p>
+            <div class="features__grid">
+                <div class="feature">
+                    <div class="feature__icon">🇺🇸</div>
+                    <h3 class="feature__title">Importado de USA</h3>
+                    <p class="feature__text">Productos originales directamente desde Estados Unidos</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon">✓</div>
+                    <h3 class="feature__title">100% Original</h3>
+                    <p class="feature__text">Garantía de autenticidad en cada producto</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon">🚚</div>
+                    <h3 class="feature__title">Envío Nacional</h3>
+                    <p class="feature__text">Llegamos a todo el país de forma segura</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon">🎁</div>
+                    <h3 class="feature__title">Sorteos</h3>
+                    <p class="feature__text">Participa en sorteos exclusivos para seguidores</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+		<!-- gallery-->
+		<div class="section__header">
+						<h2 class="section__title">Descubrí nuestras líneas exclusivas:</h2>
+						
+
+				<p class="section__subtitle">👕 Urban Style: ropa casual con actitud moderna.</p>
+
+				<p class="section__subtitle">👠 Premium Selection: prendas de diseñador y marcas de lujo.</p>
+
+				<p class="section__subtitle">👖 Everyday Basics: esenciales de alta calidad para el día a día.</p>
+
+				<p class="section__subtitle">🧥 Season Picks: las mejores tendencias de cada temporada.</p>
+					</div>
+		<div class="container">
+				<div class="gallery" id="gallery">
+					<!-- Las imágenes se cargarán dinámicamente -->
+				</div>
 			</div>
-		</div>
-  </footer>
-
-  <script>
-  const phrasesEs = [
-    "Diseño web minimalista con propósito.",
-    "Accesibilidad y rendimiento en cada línea de código.",
-    "Experiencias digitales que inspiran confianza.",
-    "SEO inteligente para crecer en la web."
-  ];
-  const phrasesEn = [
-    "Diseño web minimalista con propósito.",
-    "Accesibilidad y rendimiento en cada línea de código.",
-    "Experiencias digitales que inspiran confianza.",
-    "SEO inteligente para crecer en la web.",
-	
-	"Minimal design and UX focus.",
-     "Basic SEO and speed optimization.",
-     "Responsive delivery and testing."
-  ];
-    const btnES=document.getElementById('btn-es');
-    const btnEN=document.getElementById('btn-en');
-    const esEls=document.querySelectorAll('[data-es]');
-    const enEls=document.querySelectorAll('[data-en]');
-    function setLang(lang){
-      if(lang==='es'){
-        btnES.classList.add('active');btnEN.classList.remove('active');
-        esEls.forEach(e=>e.style.display='');
-        enEls.forEach(e=>e.style.display='none');
-      }else{
-        btnEN.classList.add('active');btnES.classList.remove('active');
-        enEls.forEach(e=>e.style.display='');
-        esEls.forEach(e=>e.style.display='none');
-      }
-    }
-    btnES.addEventListener('click',()=>setLang('es'));
-    btnEN.addEventListener('click',()=>setLang('en'));
-
-    // Animación de texto tipo máquina de escribir
-    const title=document.getElementById('animated-title');
-    const textsES=["Impulsá tu negocio con un sitio web profesional","Desarrollos modernos y eficientes","Tu presencia digital, potenciada"];
-    const textsEN=["Boost your business with a professional website","Modern and efficient development","Your digital presence, elevated"];
-    let textIndex=0, charIndex=0, currentLang='es';
-
-    function typeEffect(){
-      const arr=currentLang==='es'?textsES:textsEN;
-      if(charIndex<arr[textIndex].length){
-        title.textContent+=arr[textIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(typeEffect,90);
-      }else{
-        setTimeout(()=>eraseEffect(),2000);
-      }
-    }
-
-    function eraseEffect(){
-      if(charIndex>0){
-        title.textContent=title.textContent.slice(0,-1);
-        charIndex--;
-        setTimeout(eraseEffect,30);
-      }else{
-        textIndex=(textIndex+1)%((currentLang==='es')?textsES.length:textsEN.length);
-        setTimeout(typeEffect,600);
-      }
-    }
-
-    function startTyping(){title.textContent='';typeEffect();}
-
-    btnES.addEventListener('click',()=>{currentLang='es';startTyping();});
-    btnEN.addEventListener('click',()=>{currentLang='en';startTyping();});
-
-    startTyping();
-
-    // Footer clock
-    const clock=document.getElementById('clock');
-    const year=document.getElementById('year');
-    year.textContent=new Date().getFullYear();
-    function updateClock(){
-      const now=new Date();
-      const time=now.toLocaleTimeString('es-UY',{hour12:false});
-      clock.textContent=time;
-    }
-    setInterval(updateClock,1000);
-    updateClock();
-	
-	document.addEventListener('DOMContentLoaded', () => {
-		initTheme();
-		 // Inicialización con lazy loading optimizado, Ajustar altura del aside según el viewport
-	 });
-	 
-        // Theme Toggle
-        const themeToggle = document.getElementById('themeToggle');
-		const html = document.documentElement;
-
-        themeToggle.addEventListener('click', () => {
-            const theme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-            html.setAttribute('data-theme', theme);			
-            localStorage.setItem('theme', theme);
-			updateThemeIcon(theme);
-        });
-function updateThemeIcon(theme) {
-		const themeIcon = document.getElementById('themeIcon');
-            themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
-      }
-  function aplicarTema(datoTema){
-	const html = document.documentElement;
-   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-	 localStorage.setItem('theme', 'dark');
-		html.setAttribute('data-theme', 'dark');
-		updateThemeIcon(datoTema);
-   }
-   else{
-		localStorage.setItem('theme', 'light');
-		html.setAttribute('data-theme', 'light');
-		updateThemeIcon('light');}
-  }
-  function devolverThemaGuardado(){
-	//al iniciar operador ternario  verifica si hay tema guardado dark, y sera true y devuelve dark si no false y devuelva light
-	const savedTheme = localStorage.getItem('theme') ||
-            (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-	return savedTheme;
-  }
-  
- function initTheme(){
-	 const theme_salved = devolverThemaGuardado();
-	 aplicarTema(theme_salved);
- }
+			<!-- Modal -->
+			<div class="modal" id="modal" onclick="closeModal(event)">
+				<div class="modal-content">
+					<button class="modal-close" onclick="closeModal()">&times;</button>
+					<img id="modal-img" src="" alt="">
+					<div class="modal-info">
+						<h3 id="modal-title"></h3>
+						<p id="modal-description"></p>
+					<button class="btn_ptoduct">Ver más</button>
+					</div>
+				</div>
+			</div>
+	</section>
  
- // Detectar cambios en el tema del sistema a dark
- window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {  
-	aplicarTema('dark');
-   }); 
-  </script>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+					<h2 class="about__title">Sobre Nosotros</h2>
+            <div class="about__grid">
+                <div class="about__image">
+                    <div class="about__image-placeholder"></div>
+                </div>
+                <div class="about__content"style="display:flex;flex-direction:column;">
+                    <div >
+						<h3 >Pasión por la Moda</h3>
+						<p class="about__text">En Droppa somos una empresa familiar comprometida con traer lo mejor de la moda estadounidense a Uruguay. Cada producto es seleccionado cuidadosamente, garantizando autenticidad y calidad superior.</p>
+						<p class="about__text">Nos preocupamos por brindarte no solo productos excepcionales, sino también una experiencia de compra memorable y un servicio al cliente que supere tus expectativas.</p>
+						<ul class="about__list">
+							<li>🤝Más de 5 años de experiencia</li>
+							<li>🌟 Confianza y cercanía: nos avalan años de experiencia y clientes satisfechos.</li>
+							<li>✅ Compromiso con la calidad</li>
+							<li>❤️ Atención personalizada</li>
+							<li>⚡ Envíos rápidos y seguros: desde nuestra empresa a tu puerta.</li>
+						</ul>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <!-- <section class="cta"> -->
+        <!-- <div class="container"> -->
+            <!-- <div class="cta__content"> -->
+                <!-- <h2 class="cta__title">¿Listo para renovar tu estilo?</h2> -->
+                <!-- <p class="cta__text">Únete a nuestra comunidad y participa en sorteos exclusivos</p> -->
+                <!-- <a href="#contact" class="btn btn--primary btn--large">Contactar Ahora</a> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </section> -->
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">¿Listo para renovar tu estilo?</h2>
+                <p class="section__subtitle">Estamos aquí para ayudarte</p>
+            </div>
+			
+                <div class="social__col" >
+                    <h3 class="footer__title">DROPPA</h3>
+                    <p class="footer__text">Empresa familiar dedicada a importar moda auténtica desde Estados Unidos. Calidad garantizada y servicio excepcional.</p>
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/droppa.uy/" class="footer__social-link" aria-label="Instagram" target="_blank">
+                            <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="TikTok">
+                            <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+				
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <div class="contact__icon">📱</div>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>+598 XX XXX XXX</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__icon">📧</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@droppa.com.uy</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__icon">📍</div>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Montevideo, Uruguay</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__icon">⏰</div>
+                        <div>
+                            <h3>Horarios</h3>
+                            <p>Lun - Vie: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+				<div class="form">
+					<p class="cta__text">Únete a nuestra comunidad y participa en sorteos exclusivos</p>
+					<form class="contact__form">
+						<input type="text" placeholder="Tu nombre" class="form__input" required>
+						<input type="email" placeholder="Tu email" class="form__input" required>
+						<textarea placeholder="Tu mensaje" class="form__textarea" rows="5" required></textarea>
+						<button type="submit" class="btn btn--primary btn--full">Enviar Mensaje</button>
+					</form>
+				</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h4 class="footer__heading">Navegación</h4>
+                    <ul class="footer__list">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#products">Productos</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#">Catálogo</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Categorías</h4>
+                    <ul class="footer__list">
+                        <li><a href="#">Ropa Hombre</a></li>
+                        <li><a href="#">Ropa Mujer</a></li>
+                        <li><a href="#">Calzado</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Novedades</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Información</h4>
+                    <ul class="footer__list">
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Métodos de Pago</a></li>
+                        <li><a href="#">Envíos y Devoluciones</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="./disclaimer/disclaimer.html">Política de Privacidad</a></li>
+                        <li><a href="KikiriyaDevOps.html">Garantía de Autenticidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <!-- <h4 class="footer__heading">Newsletter</h4> -->
+                    <!-- <p class="footer__text">Suscríbete para recibir ofertas exclusivas y participar en sorteos</p> -->
+                    <!-- <form class="footer__form"> -->
+                        <!-- <input type="email" placeholder="Tu email" class="footer__input" required> -->
+                        <!-- <button type="submit" class="footer__btn">Suscribir</button> -->
+                    <!-- </form> -->
+                    <!-- <div class="footer__badges"> -->
+                        <!-- <div class="badge">✓ Envíos seguros</div> -->
+                        <!-- <div class="badge">✓ Pago seguro</div> -->
+                    <!-- </div> -->
+					<p>Light/Dark</p>
+					 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+					<img class="sun-icon" src="logo_d.png"/>
+					<img class="moon-icon" src="logo_3.png"/>
+                </button>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Droppa. Todos los derechos reservados.</p>
+				<p>Hecho con 💚 en Montevideo, Uruguay.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+		document.addEventListener('DOMContentLoaded', function() {
+		
+		
+		});
+		
+		
+        const html = document.documentElement;
+        	 
+        function updateThemeIcon(theme) {
+			<!-- const themeToggle = document.getElementById('themeToggle'); -->
+            <!-- themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙'; -->
+        }
+		
+		// localStorage.getItem('theme') || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');			
+
+
+		function getCurrentTheme(){
+			return currenTheme = localStorage.getItem('theme');
+		}
+		function getSystemTheme() {
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+		function applyTheme(theme){
+				const html = document.documentElement;
+			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				localStorage.setItem('theme', 'dark');
+				html.setAttribute('data-theme', 'dark');
+				updateThemeIcon(theme);
+		   }
+		   else{
+				localStorage.setItem('theme', 'light');
+				html.setAttribute('data-theme', 'light');
+				updateThemeIcon('light');}
+			}
+			
+// Cargar tema guardado
+         function initTheme() {
+			let savedTheme = getCurrentTheme();
+			if (!savedTheme) {
+                savedTheme = getSystemTheme();
+                localStorage.setItem('theme', savedTheme);
+                console.log('Tema del sistema detectado y guardado:', savedTheme);
+            } else {
+                console.log('Tema cargado desde localStorage:', savedTheme);
+            }
+			applyTheme(savedTheme);	
+        }
+		
+		 // Detectar cambios en el tema del sistema a dark
+		window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {  
+		applyTheme('dark');
+	   }); 
+   
+
+        function toggleTheme() {
+			const html =  document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        }
+        // ============================================
+        // MOBILE MENU TOGGLE
+        // ============================================
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+		const overlay = document.getElementById('overlay');
+		
+		overlay.addEventListener('click', function() {
+		   overlay.classList.remove('active');
+		 });
+        
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+			overlay.classList.add('active'); 
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav__link').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+				overlay.classList.remove('.active'); 
+            });
+        });
+		navMenu.addEventListener('click',()=>{
+			navMenu.classList.remove('active');
+		});
+		
+		overlay.addEventListener('click', function() {
+		   overlay.classList.remove('active');
+		 });
+
+        // ============================================
+        // SMOOTH SCROLL
+        // ============================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ============================================
+        // HEADER SCROLL EFFECT
+        // ============================================
+        const header = document.querySelector('.header');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.style.boxShadow = '0 2px 16px #210497';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // ============================================
+        // FORM SUBMISSION
+        // ============================================
+        const contactForm = document.querySelector('.contact__form');
+        const newsletterForm = document.querySelector('.footer__form');
+
+        const handleSubmit = (e) => {
+            e.preventDefault();
+            alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
+            e.target.reset();
+        };
+
+        if (contactForm) contactForm.addEventListener('submit', handleSubmit);
+        if (newsletterForm) newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('¡Gracias por suscribirte! Recibirás nuestras novedades y sorteos.');
+            e.target.reset();
+        });
+
+        // ============================================
+        // PRODUCT CARD INTERACTIONS
+        // ============================================
+        <!-- document.querySelectorAll('.btn_ptoduct').forEach(btn => { -->
+            <!-- btn.addEventListener('click', (e) => { -->
+                <!-- const card = e.target.closest('.product-card'); -->
+                <!-- const title = card.querySelector('.product-card__title').textContent; -->
+                <!-- alert(`Interesado en: ${title}\n\n¡Contáctanos para más información!`); -->
+            <!-- }); -->
+        <!-- }); -->
+		// Datos de imágenes con URLs de Pixabay optimizadas
+        const images = [
+            {	
+				id:0001,
+                src: './imgs/billetera1.png',
+                title: 'Billetera Levi\'s nueva y original',
+                description: '100% cuero.RFID escudo protector que evita el robo de información de las tarjetas de crédito y débito.Gran número de divisiones.',
+				precio: 2300,
+				tarjeta:null,
+				category: 'all'
+            },
+			{
+                src: './imgs/billetera2.png',
+                title: 'Billeteras Tommy Hilfiger nuevas y originales.',
+                description: '100 % cuero.Color negro.Gran número de divisiones.Tarjetero extraíble.Vienen dentro de una caja ideal para obsequio.',
+				precio: 2300,
+				tarjeta:2800,
+				category: 'all'
+            },
+            {
+				id:0001,
+                src: './imgs/cahaleco1.png',
+                title: 'Chaleco Columbia nuevo y original',
+                description: 'Talle XS de dama. Omni-heat. Tela repelente al agua. Dos bolsillos externos y uno interno',
+				precio: 2900,
+				tarjeta:null,
+				category: 'dama'
+            },
+			{
+				id:0003,
+                src: './imgs/camp 6.png',
+                title: 'Buzo Columbia',
+                description: 'Buzo Columbia nuevo y original de dama.Polar.Talle M.',
+				precio: 2300,
+				tarjeta:2600,
+				category: 'dama'
+            },
+			{
+				id:0005,
+                src: './imgs/campera1.png',
+                title: 'Campera Columbia nueva original y con etiquetas de dama.',
+                description: 'Modelo Pike Laka Cropped.Talle XL en color negro con verde y marfil, rojo con azul y marfil o marfil.Omni-heat por dentro, material sintético que retiene el calor corporal.\
+				Relleno thermator, relleno sintético de rendimiento similar al de la pluma.Resistente al agua y el viento.Dos bolsillos externos.',
+				precio: 5900,
+				tarjeta:6400,
+				category: 'dama'
+            },
+			{
+				id:0006,
+                src: './imgs/foto2.png',
+                title: 'Camperas Columbia nuevas originales y con etiquetas',
+                description: 'Modelo Seneca Basin Hybrid.Térmicas con Omni-heat por dentro y resistentes al agua.Dos bolsillos externos.Talle S en negro o blanco con gris.Talles M y L en blanco con gris.',
+				precio: 4500,
+				tarjeta:null,
+				category: 'dama'
+            },
+			{	
+				id:0007,
+                src: './imgs/riño1.png',
+                title: 'Riñoneras North Face nuevas y originales',
+                description: 'Doble cierre. Logo bordado. Repele el agua',
+				precio: 2400,
+				tarjeta:2700,
+				category: 'all'
+            },
+			{	
+				id:0008,
+                src: './imgs/champ1.png',
+                title: 'Championes Adidas nuevos y originales de dama',
+                description: 'Modelo Fukasa run. Originales de dama Talle 8,5 (25 cm).',
+				precio: 3200,
+				tarjeta:3500,
+				category: 'dama'
+            },
+			{	
+				id:0009,
+                src: './imgs/champ2.png',
+                title: 'Botas Adidas nuevas y originales en caja.',
+                description: 'Talles 11 (29 cm, recomiendo guiarse por ésta medida). Solo en blanco con azul.',
+				precio: 2500,
+				tarjeta:3800,
+				category: 'hombre'
+            },
+			{	
+				id:0010,
+                src: './imgs/camp5.png',
+                title: 'Camisa tipo campera Tommy Hilfiger',
+                description: 'Nuevas y originales. Talle L.100% algodón. Dos bolsillos externos.',
+				precio: 2900,
+				tarjeta:3400,
+				category: 'hombre'
+            },
+			{	
+				id:0011,
+                src: './imgs/foto5.png',
+                title: 'Campera Columbia nuevas originales y con etiquetas de hombre',
+                description: 'Modelo Gold 650 Turbodown. Talle S en azul.Omni-heat térmico reflectivo por dentro el cual hace rebotar el calor del cuerpo. Rellena de plumas de pato.',
+				precio: 6500,
+				tarjeta:null,
+				category: 'hombre'
+            },
+			{	
+				id:0012,
+                src: './imgs/champ3.png',
+                title: 'Championes Columbia nuevos y originales de hombre.',
+                description: 'Talle S y L en azul oscuro. Talles M y L en celeste. Talle L en gris oscuro. Modelo Steens Mountain Crew.',
+				precio: 2000,
+				tarjeta:null,
+				category: 'hombre'
+            },
+			{	
+				id:0013,
+                src: './imgs/col1.png',
+                title: 'Buzo polar Columbia nuevo original y con etiquetas.',
+                description: 'Talle L solo en color amarillo. Modelo Pardon my Trench. Omni-Teach impermeable.',
+				precio: 3500,
+				tarjeta:3800,
+				category: 'dama'
+            },
+			{	
+				id:0014,
+                src: './imgs/campera12.png',
+                title: 'Campera Adidas nuevas originales y con etiquetas de dama',
+                description: 'Talle S en azul. Omni-heat térmico reflectivo por dentro el cual hace rebotar el calor del cuerpo. Mas colores.',
+				precio: 2500,
+				tarjeta:2600,
+				category: 'dama'
+            },
+			{	
+				id:0015,
+                src: './imgs/foto3.png',
+                title: 'Camperas Columbia nueva original y con etiquetas de dama.',
+                description: 'Talles S, M y XL. Rellenas de plumas. Térmicas con Omni-heat por dentro el cual ayuda a retener el calor corporal',
+				precio: 5500,
+				tarjeta: null,
+				category: 'dama'
+            }
+        ];
+		
+        // Funcionalidad del modal
+        function openModal(image) {
+            const modal = document.getElementById('modal');
+            const modalImg = document.getElementById('modal-img');
+            const modalTitle = document.getElementById('modal-title');
+            const modalDescription = document.getElementById('modal-description');
+            
+            modalImg.src = image.src.replace('_640.jpg', '_1280.jpg'); // Versión HD
+            modalImg.alt = image.title;
+            modalTitle.textContent = image.title;
+            modalDescription.textContent = image.description;
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(event) {
+            if (event && event.target !== event.currentTarget && !event.target.classList.contains('modal-close')) {
+                return;
+            }
+            
+            const modal = document.getElementById('modal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Cerrar modal con ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+		
+		 // Crear elementos de galería
+        function createGalleryItem(image, index) {
+            const item = document.createElement('div');
+            item.className = 'gallery-item loading';
+            
+            const img = document.createElement('img');
+            img.addEventListener('load', () => {
+                item.classList.remove('loading');
+            });
+            
+            // Lazy loading nativo
+            img.loading = 'lazy';
+            img.src = image.src;
+            img.alt = image.title;
+            
+            const overlay = document.createElement('div');
+            overlay.className = 'gallery-overlay';
+            overlay.innerHTML = `
+                <h3>${image.title}</h3>
+                <p>${image.description.substring(0, 80)}...</p>
+            `;
+            
+            item.appendChild(img);
+            item.appendChild(overlay);
+            
+            // Evento click para modal
+            item.addEventListener('click', () => openModal(image));
+            
+            return item;
+        }
+
+        // Cargar galería
+        function loadGallery() {
+            const gallery = document.getElementById('gallery');
+            
+            images.forEach((image, index) => {
+                const item = createGalleryItem(image, index);
+                gallery.appendChild(item);
+            });
+        }
+
+		
+
+        // ============================================
+        // INTERSECTION OBSERVER FOR ANIMATIONS  about__image-placeholder
+        // ============================================
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements
+        document.querySelectorAll('.feature, .product-card, .gallery-item, .about__content, .about__image-placeholder, .hero__image-placeholder').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+		
+		 // Intersection Observer para carga lazy mejorada
+        function setupLazyLoading() {
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.src = img.dataset.src || img.src;
+                            img.classList.remove('lazy');
+                            observer.unobserve(img);
+                        }
+                    });
+                });
+
+                document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+                    imageObserver.observe(img);
+                });
+            }
+        }
+		 // Precargar imágenes críticas
+        function preloadCriticalImages() {
+            const criticalImages = images.slice(0, 4); // Precargar primeras 4
+            criticalImages.forEach(image => {
+                const link = document.createElement('link');
+                link.rel = 'preload';
+                link.as = 'image';
+                link.href = image.src;
+                document.head.appendChild(link);
+            });
+        }
+		// Event Listeners
+		 const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', toggleTheme);
+		
+		// Inicialización
+        document.addEventListener('DOMContentLoaded', () => {
+            initTheme();
+            preloadCriticalImages();
+            loadGallery();
+            setupLazyLoading();
+        });
+    </script>
 </body>
 </html>
