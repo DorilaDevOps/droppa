@@ -216,7 +216,7 @@
             font-family: inherit;
         }
       
-
+/* Header */ 
         .header {
             position: fixed;
             top: 0;
@@ -229,6 +229,55 @@
             transition: var(--transition2);
 			height:5rem;
         }
+		        
+		 .header.hidden {
+            transform: translateY(-100%);
+        }
+		
+		
+		 /* Scroll Progress Bar */
+		    /* Scroll Progress Bar */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-secondary) 100%);
+            z-index: 1001;
+            transition: width 0.1s ease;
+        }
+	
+	
+	 /* Scroll Info Box */
+        .scroll-info {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            transition: opacity 0.3s ease;
+        }
+
+        .scroll-info.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .scroll-percentage {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .scroll-label {
+            font-size: 0.85rem;
+            color: #666;
+        }
+		
 
         .nav__container {
             display: flex;
@@ -890,15 +939,15 @@
             list-style: none;
             display: grid;
             gap: var(--spacing-sm);
-            margin-top: var(--spacing-lg);
+            margin-top: var(--spacing-lg);			
+			justify-items: start;
+			justify-content: space-around;
         }
 
         .about__list li {
             font-size: var(--font-size-base);
             color: var(--color-text-secondary);
-            padding-left: var(--spacing-md);		
-			justify-items: start;
-			justify-content: space-around;
+            padding-left: var(--spacing-md);
         }
 
 
@@ -1261,6 +1310,11 @@
             .contact__grid {
                 grid-template-columns: 1fr 1fr;
             }
+			.scroll-info {
+                bottom: 1rem;
+                right: 1rem;
+                padding: 0.8rem 1rem;
+            }
 			
         }
 
@@ -1296,12 +1350,13 @@
 			.header{background-color:var(--color-border);}
 		}
 		
-	
     </style>
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <nav class="nav">
             <div class="nav__container">
 				<div class="brand_logo">
@@ -1332,7 +1387,13 @@
         </nav>
     </header>
 	<div class="overlay" id="overlay"></div>
-
+	
+<!-- Scroll Info Box -->
+    <div class="scroll-info" id="scrollInfo">
+        <div class="scroll-percentage" id="scrollPercentage">0%</div>
+        <div class="scroll-label">Scroll</div>
+    </div>
+	
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero__container">
@@ -2062,6 +2123,58 @@
 		 const themeToggle = document.getElementById('themeToggle');
         themeToggle.addEventListener('click', toggleTheme);
 		
+		
+		//SCROLL HEADER HIDDEN
+		const header2 = document.getElementById('header');
+        const scrollProgress = document.getElementById('scrollProgress');
+        const scrollInfo = document.getElementById('scrollInfo');
+        const scrollPercentage = document.getElementById('scrollPercentage');
+        
+        let ticking = false;
+
+        function updateScrollElements() {
+            // Calcular el porcentaje de scroll
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollableHeight = documentHeight - windowHeight;
+            const scrollPercent = (scrollTop / scrollableHeight) * 100;
+
+            // Actualizar barra de progreso
+            scrollProgress.style.width = scrollPercent + '%';
+
+            // Actualizar contador de scroll
+            scrollPercentage.textContent = Math.round(scrollPercent) + '%';
+
+            // Ocultar header cuando se alcanza el 50%
+            if (scrollPercent >= 50) {
+                header2.classList.add('hidden');
+            }else {
+                header2.classList.remove('hidden');
+            }
+
+            // Ocultar scroll info cuando header desaparece
+            if (scrollPercent >= 50) {
+                scrollInfo.classList.add('hidden');
+            } else {
+                scrollInfo.classList.remove('hidden');
+            }
+
+            ticking = false;
+        }
+
+        function requestTick() {
+            if (!ticking) {
+                window.requestAnimationFrame(updateScrollElements);
+                ticking = true;
+            }
+        }
+
+        // Evento de scroll optimizado
+        window.addEventListener('scroll', requestTick);
+
+        // Ejecutar una vez al cargar
+        updateScrollElements();
 		// Inicialización
         document.addEventListener('DOMContentLoaded', () => {
             initTheme();
