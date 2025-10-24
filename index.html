@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <title>Droppa - Ropa y Accesorios Originales Importados de USA</title>
-	<meta name="description" content="DROPPA | Ropa y accesorios originales importados de EEUU | productos Originales y de calidad para la moda | Envios a todo el pais | venta con tarjetas">
-	<meta name="keywords" content="DROPPA. ropa , campera, pantalones, lentes, chapiones, segunda mano, originales,  Montevideo, moda, Uruguay, importado">
+    <title>DROPPA | Ropa y Accesorios Originales Importados de USA</title>
+	<meta name="description" content="Importamos tendencias, solo marcas auténticas | Lo último en moda|  Etilo, tendencia y calidad para la moda | Envios a todo el pais | Venta con tarjetas">
+	<meta name="keywords" content="DROPPA, ropa , campera, pantalones, lentes, chapiones, segunda mano, originales,  Montevideo, moda, Uruguay, importado">
     <meta name="author" content="Kikiriya devOps">
     <meta name="language" content="Spanish">
     <meta name="geo.region" content="UY-MO">
@@ -16,7 +16,7 @@
 	
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Droppa - Ropa y Accesorios Originales Importados de USA">
-    <meta property="og:description" content="DROPPA | Ropa y accesorios originales importados de EEUU | productos Originales y de calidad para la moda | Envios a todo el pais | venta con tarjetas">
+    <meta property="og:description" content="Importamos tendencias, solo marcas auténticas | Lo último en moda|  Etilo, tendencia y calidad para la moda | Envios a todo el pais | Venta con tarjetas">
     <meta property="og:url" content="">
     <meta property="og:image" content="image/jpg">
     <meta property="og:type" content="website">
@@ -124,7 +124,7 @@
 			--gradient-start:#fff6f6ba;
 			--gradient-end: #d1d1d100;
 			--overlay: rgba(26, 26, 26, 0.85);
-			--overlay2:#010b2bdb;
+			--overlay2:#010b2beb;
         }
 
         [data-theme="dark"] {
@@ -253,7 +253,8 @@
 		justify-content:center;
 		color:white;font-weight:700;
 		font-size:20px;	
-		border: 1px solid #666;
+		border: 1px solid var(--text_secondary);
+		min-width:4rem;
 		
 	}
 	.logo img{ 
@@ -262,7 +263,7 @@
 		background-position: bottom;
 	}
         .nav__logo {
-            font-size: var(--font-size-lg);
+            font-size: var(--font-size-xl);
             font-weight: 800;
             letter-spacing: -0.02em;
             background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
@@ -412,7 +413,6 @@
 		}
 		
         .container {
-            max-width: 1400px;
             margin: 0 auto;
             padding: .5rem 0;
 			color: var(--color-text);
@@ -506,7 +506,7 @@
 
         .modal-content {
             max-width: 90vw;
-            max-height: 90vh;
+            max-height: 95vh;
             position: relative;
             background: var(--bg_primary);
             border-radius: 12px;
@@ -1058,6 +1058,13 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
+		.footer__subtitle{
+			font-size: var(--font-size-lg);
+            color: var(--mercedes_color);
+			text-shadow:2px 2px 5px var(--color-primary);
+            max-width: 600px;
+            margin: 0 auto;
+		}
 
         .footer__text {
             font-size: var(--font-size-sm);
@@ -1256,9 +1263,24 @@
         }
 
         @media (min-width: 1200px) {
+			.header{height:7em;}
+			.brand_logo { gap: 1rem;}
+			.logo > img {width: 80px;}
+			.nav__logo {font-size:var(--font-size-2xl);}
             .gallery {
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(4, 1fr);				
+				grid-template-rows: minmax(200px, 300px);
             }
+			.container, .section__header{
+				font-size: 1.2em;
+				letter-spacing: .1em;
+			}
+			.section__header{
+				text-align: justify;
+			}
+			.gallery-item img {
+				height: 300px;
+			}
         }
 
         @media (min-width: 1600px) {
@@ -1317,9 +1339,10 @@
                 <!-- <span class="hero__badge">💯 Productos 100% originales</span> -->
                 <!-- <span class="hero__badge">📦 Envíos a todo el país</span> -->
 				
-                <h1 class="hero__title">Moda Auténtica, Calidad Garantizada</h1>
+                <h1 class="hero__title">Ropa y accesorios 100% originales importados desde Estados Unidos</h1>
+                <p class="hero__description">Originalidad que se siente, estilo que se nota.</p>
                 <p class="hero__description">Descubre las últimas tendencias en ropa y accesorios importados directamente de Estados Unidos	</p>
-				<p class="hero__description">En DROPPA creemos que la moda debe inspirar confianza. comprometida con tu estilo de marcas reconocidas</p>
+				<p class="hero__description">En DROPPA creemos que la moda debe inspirar confianza porque tu estilo merece lo mejor, sin imitaciones.</p>
 				
                 <div class="hero__buttons">
                     <a href="#products" class="btn btn--primary">Ver Colección</a>
@@ -1341,15 +1364,17 @@
         <div class="container">
 		<h2>Así hacemos que suceda</h2>
 
-<p>Importamos moda auténtica directamente desde Estados Unidos.</p>
+<p>Importamos solo marcas auténticas, sin copias ni imitaciones directamente desde Estados Unidos.</p>
 
-<p>Garantizamos la originalidad de cada producto.</p>
+<p>Productos premium para quienes valoran lo genuino con garantía de autenticidad.</p>
+
+<p>Seleccionamos tendencias que combinan calidad, estilo y confort.</p>
+
+<p>Prendas que superan expectativas, no presupuestos.</p>
 
 <p>Ofrecemos atención personalizada, tanto en compras individuales como al por mayor.</p>
 
 <p>Manejamos envíos seguros y rápidos, en todo Uruguay.</p>
-
-<p>Seleccionamos tendencias que combinan calidad, estilo y confort.</p>
             <div class="features__grid">
                 <div class="feature">
                     <div class="feature__icon">🇺🇸</div>
@@ -1380,7 +1405,7 @@
     <section class="products" id="products">
 		<!-- gallery-->
 		<div class="section__header">
-						<h2 class="section__title">Descubrí nuestras líneas exclusivas:</h2>
+						<h2 class="section__title">Dale un upgrade a tu guardarropa con productos 100% originales:</h2>
 						
 
 				<p class="section__subtitle">👕 Urban Style: ropa casual con actitud moderna.</p>
@@ -1404,6 +1429,8 @@
 					<div class="modal-info">
 						<h3 id="modal-title"></h3>
 						<p id="modal-description"></p>
+						<p id="modal-price"></p>
+						<p id="modal-tarjeta"></p>
 					<button class="btn_ptoduct">Ver más</button>
 					</div>
 				</div>
@@ -1421,13 +1448,14 @@
                 <div class="about__content"style="display:flex;flex-direction:column;">
                     <div >
 						<h3 >Pasión por la Moda</h3>
-						<p class="about__text">En Droppa somos una empresa familiar comprometida con traer lo mejor de la moda estadounidense a Uruguay. Cada producto es seleccionado cuidadosamente, garantizando autenticidad y calidad superior.</p>
+						<p class="about__text">En Droppa somos una empresa comprometida con traer lo mejor de la moda estadounidense a Uruguay.</p>
+						<p class="about__text"> Cada producto es seleccionado cuidadosamente, pensando en personas que prefieren lo genuino y garantizando autenticidad y calidad superior.</p>
 						<p class="about__text">Nos preocupamos por brindarte no solo productos excepcionales, sino también una experiencia de compra memorable y un servicio al cliente que supere tus expectativas.</p>
 						<ul class="about__list">
 							<li>🤝Más de 5 años de experiencia</li>
-							<li>🌟 Confianza y cercanía: nos avalan años de experiencia y clientes satisfechos.</li>
-							<li>✅ Compromiso con la calidad</li>
-							<li>❤️ Atención personalizada</li>
+							<li>🌟 Confianza y cercanía, atención personalizada </li>
+							<li>✅ Compromiso con la calidad y la autenticidad en cada detalle.</li>
+							<li>❤️ Creemos en el valor de lo genuino.</li>
 							<li>⚡ Envíos rápidos y seguros: desde nuestra empresa a tu puerta.</li>
 						</ul>
 					</div>
@@ -1441,7 +1469,7 @@
         <!-- <div class="container"> -->
             <!-- <div class="cta__content"> -->
                 <!-- <h2 class="cta__title">¿Listo para renovar tu estilo?</h2> -->
-                <!-- <p class="cta__text">Únete a nuestra comunidad y participa en sorteos exclusivos</p> -->
+                <!-- <p class="cta__text">Únete a nuestra comunidad y participa en sorteos exclusivos</p> -->		
                 <!-- <a href="#contact" class="btn btn--primary btn--large">Contactar Ahora</a> -->
             <!-- </div> -->
         <!-- </div> -->
@@ -1452,12 +1480,15 @@
         <div class="container">
             <div class="section__header">
                 <h2 class="section__title">¿Listo para renovar tu estilo?</h2>
-                <p class="section__subtitle">Estamos aquí para ayudarte</p>
+                <p class="section__subtitle">La moda cambia, pero lo original se mantiene.
+					Si querés saber más, consultar talles o recibir novedades, hablá con nosotros.
+					Un mensaje puede ser el comienzo de tu próxima prenda favorita.
+				</p>
             </div>
 			
                 <div class="social__col" >
                     <h3 class="footer__title">DROPPA</h3>
-                    <p class="footer__text">Empresa familiar dedicada a importar moda auténtica desde Estados Unidos. Calidad garantizada y servicio excepcional.</p>
+                    <h2 class="footer__subtitle">Contactanos  y que fluya</h2>
                     <div class="footer__social">
                         <a href="https://www.instagram.com/droppa.uy/" class="footer__social-link" aria-label="Instagram" target="_blank">
                             <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
@@ -1532,7 +1563,7 @@
                         <li><a href="#products">Productos</a></li>
                         <li><a href="#about">Nosotros</a></li>
                         <li><a href="#contact">Contacto</a></li>
-                        <li><a href="#">Catálogo</a></li>
+                        <li><a href="#products">Catálogo</a></li>
                     </ul>
                 </div>
                 <div class="footer__col">
@@ -1890,15 +1921,25 @@
             const modalImg = document.getElementById('modal-img');
             const modalTitle = document.getElementById('modal-title');
             const modalDescription = document.getElementById('modal-description');
+            const modalPrice = document.getElementById('modal-price');
+            const modalTarjeta = document.getElementById('modal-tarjeta');
             
             modalImg.src = image.src.replace('_640.jpg', '_1280.jpg'); // Versión HD
             modalImg.alt = image.title;
             modalTitle.textContent = image.title;
             modalDescription.textContent = image.description;
+            modalPrice.textContent = `$ ${image.precio}`;
+			let isTarjeta = devolverTarjeta(`${image.tarjeta}`);
+            modalTarjeta.textContent = `💳  ${isTarjeta}`;
             
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
+		function devolverTarjeta(data){
+				let dev = !isNaN(data);
+				console.log("La variable tiene un dev." + dev);
+				if(dev ===true){return data;}else{return " no ";}				
+		}
 
         function closeModal(event) {
             if (event && event.target !== event.currentTarget && !event.target.classList.contains('modal-close')) {
