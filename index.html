@@ -59,7 +59,6 @@
   --text_accent: #2E5EAA;      /* Azul Oxford elegante */
   --text_inverse: #FFFFFF;     /* Texto sobre fondos oscuros */
   --text_redSoft:#ea7575;
-			
 
   /* Colores de énfasis */
   --brand_primary: #2E5EAA;    /* Azul clásico, confianza */
@@ -464,11 +463,10 @@
 		
         .container {
             margin: 0 auto;
-            padding: .5rem 0;
-			color: var(--color-text);
-			
-		background:linear-gradient(1deg,var(--color-surface),var(--bg_transparent2));
-			    text-align: center;
+			color: var(--color-text);			
+			background:linear-gradient(1deg,var(--color-surface),var(--bg_transparent2));
+			text-align: center;
+			border-top:2px solid var(--text_redSoft);
         }
 
         /* Gallery Grid */
@@ -856,11 +854,16 @@
             text-align: center;
             margin-bottom: var(--spacing-xs);
         }
+		.section__header {
+		    color:var(--text_redSoft);
+			background: linear-gradient(1deg, var(--color-surface), var(--bg_transparent2));
+			padding: 1rem .5rem;
+	}
 
         .section__title {
             font-size: var(--font-size-xl);
             font-weight: 800;
-            margin-bottom: var(--spacing-sm);			
+            margin-bottom: var(--spacing-sm);
 			color:var(--text_redSoft);
         }
 
@@ -891,6 +894,7 @@
         ============================================ */
         .about {
             background: var(--color-bg-secondary);
+			padding-bottom: .5rem;
         }
 
         .about__grid {
@@ -1010,6 +1014,8 @@
            CONTACT SECTION
         ============================================ */
         .contact {
+			display:grid;
+			grid-template-columns:minmax(300px,1fr);
             <!-- padding: var(--spacing-2xl) 0; -->
         }
 		.social__col{
@@ -1172,7 +1178,7 @@
         }
 		
 		body > footer > div > div.footer__grid > div:nth-child(3) > ul > li:nth-child(5) > a{color:light-dark(yellow, red);text-shadow:2px 2px 5px black;}
-		body > footer > div > div.footer__grid > div:nth-child(3) > ul > li:nth-child(6)> a{color:light-dark(yellow, red);text-shadow:2px 2px 5px black;}
+		body > footer > div > div.footer__grid > div:nth-child(3) > ul > li:nth-child(6)> a{color:light-dark(yellow, cyan);text-shadow:2px 2px 5px black;}
 
         .footer__list a:hover {
             color: var(--color-primary);
